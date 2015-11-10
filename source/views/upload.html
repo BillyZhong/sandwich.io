@@ -1,0 +1,121 @@
+<div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#45484D">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" style="width:70%" src="/source/img/assets/Sandwich.io_text.png">
+        </a>
+      </div>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+        <form class="navbar-form navbar-right" action="#" style="padding-right:15%" role="search">
+                <div class="form-group">
+                  <div class="input-group input-group-rounded" style="width:150%">
+                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+      </div>
+    </div>
+<div id="sidebar" role="navigation">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+    </button>
+    <div id="sidebar-nav">
+        <ul class="nav nav-stacked">
+            <li>
+                <a href="/#/home"><img src="/source/img/assets/home.png" style="width:100%"></a>
+            </li>
+            <li>
+                <a href="/#/create"><img src="/source/img/assets/create.png" style="width:100%"></a>
+            </li>
+            <li>
+                <a href="/#/mynotes"><img src="/source/img/assets/study.png" style="width:100%"></a>
+            </li>
+            <li>
+                <a href="/#/notes?sort=newest"><img src="/source/img/assets/explore.png" style="width:100%"></a>
+            </li>
+            <li>
+                <a href="http://sandwich.billyz.me/"><img src="/source/img/assets/Power-01.png" style="width:100%"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row" style="width:105%;padding-left:14%">
+  <div class="col-md-5 col-md-offset-3"><center>
+    <img style="width:50%" src="/source/img/assets/Camera-icon.png">
+    <h2 style="color:#ECF0F1;font-family:Helvetica_Neue;color:#34495E">Pick a Lecture</h2>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Title</span>
+      <input type="text" id="uploadTitle" class="form-control" />
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Description</span>
+      <input type="text" id="uploadDescription" class="form-control" />
+    </div>
+    <br>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon">Subjects</span>
+      <tags-input min-length="1" ng-model="tags" placeholder="What is your lecture about?" replace-spaces-with-dashes="false" class="input-group"></tags-input>
+    </div>
+    <br>
+    <p style="color:#e74c3c" ng-show="uploadExtErrorShow">Please Select a .txt file</p>
+    <div class="input-group">
+      <span class="input-group-addon">Transcript</span>
+      <input type="file" style="width:100%" id="uploadFile" class="btn btn-primary">
+    </div>
+    <br>
+    <button onclick="upload()" style="width:50%" class="btn btn-primary">Submit!</button>
+  </center>
+  </div>
+</div>
+<div style="padding-top:15%"></div>
+<footer class="footer" style="background-color:#ecf0f1">
+  <div class="row" style="background-color:#ecf0f1">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">Subscribe</h3>
+            <p>Do you like this project? Want to see more stuff like this?<br>
+              Subscribe to our github to stay updated with our future projects.<br>
+              Go to: <a href="http://billyz.me" target="_blank">billyz.me</a>
+            </p>
+
+            <p class="pvl">
+              <iframe src="http://ghbtns.com/github-btn.html?user=BillyZhong&amp;repo=sandwich.io&amp;type=watch&amp;count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:105px; height: 20px;" allowtransparency="true"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=BillyZhong&amp;repo=sandwich.io&amp;type=fork&amp;count=true" height="20" width="107" frameborder="0" scrolling="0" style="width:105px; height: 20px;" allowtransparency="true"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=BillyZhong&amp;type=follow&amp;count=true" height="20" width="195" frameborder="0" scrolling="0" style="width:195px; height: 20px;" allowtransparency="true"></iframe>
+            </p>
+
+            <a class="footer-brand" href="http://sandwich.billyz.me" target="_blank">
+              <img src="/source/img/assets/sandwichbanner.png" alt="Sandwich.io">
+            </a>
+          </div>
+          <div class="col-xs-5">
+            <div class="footer-banner">
+              <h3 class="footer-title">Check Us Out</h3>
+              <ul>
+                <li>Billy Zhong @BillyZhong</li>
+                <li>Kush Rastogi @Krustey</li>
+                <li>Navneedh Maudgalya @Navneedh</li>
+                <li>Kushal Cuttari @Kushal-C
+              </ul>
+              <br><br>
+              Check out our other projects <a href="http://www.github.com/BillyZhong" target="_blank">here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="sandwichApp">
+	<head>
+		<title>Sandwich</title>
+		<base href="/">
+		<link rel='shortcut icon' href='/source/img/assets/sandwich.png' type='image/x-icon'/ >
+		<link href="/source/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/source/css/flat-ui.min.css" rel="stylesheet">
+		<link href="/source/css/stylesheet.css" rel="stylesheet">
+		<link href="/source/css/ng-tags-input.min.css" rel="stylesheet">
+		<link href="/source/css/ng-tags-input.bootstrap.min.css" rel="stylesheet">
+		<script src="/source/js/angular.min.js"></script>
+		<script src="/source/js/angular-route.min.js"></script>
+		<script src="/source/js/angular.js"></script>
+		<script src="/source/js/socket.io.min.js"></script>
+		<script src="/source/js/socket.io-stream.js"></script>
+		<script src="/source/js/ng-tags-input.min.js"></script>
+		<script src="/source/js/socketio.js"></script>
+		<script src="/source/js/misc.js"></script>
+		<script src="/source/controllers/authController.js"></script>
+		<script src="/source/controllers/loginController.js"></script>
+		<script src="/source/controllers/forgotController.js"></script>
+		<script src="/source/controllers/signupController.js"></script>
+		<script src="/source/controllers/resetController.js"></script>
+		<script src="/source/controllers/recordController.js"></script>
+		<script src="/source/controllers/uploadController.js"></script>
+		<script src="/source/controllers/mynotesController.js"></script>
+		<script src="/source/controllers/noteController.js"></script>
+	</head>
+	<body ng-controller="authController">
+		<a href="/#/" id="dir"></a>
+		<a href="/#/signup" id="dirsignup"></a>
+		<a href="/#/forgot" id="dirforgot"></a>
+		<a href="/#/reset" id="dirreset"></a>
+		<a href="/#/home" id="dirhome"></a>
+		<a href="/#/upload" id="dirupload"></a>
+		<a href="/#/mynotes" id="dirmynotes"></a>
+		<a href="/#/mynotes?load=true" id="dirmynotesload"></a>
+		<a href="/#/note" id="dirnote"></a>
+		<div class="modal"></div>
+		<div ng-view></div>
+	</body>
+</html>
